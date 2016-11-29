@@ -35,8 +35,8 @@ Rails.application.routes.draw do
 
       resources :invoice_items, only: [:index, :show] do
         scope module: "invoice_items" do
-          resources :invoices, only: [:index]
-          resources :items, only: [:index]
+          get '/invoice' => 'invoices#index',   as: "invoice"
+          get '/item' => 'items#index',   as: "item"
         end
       end
 
