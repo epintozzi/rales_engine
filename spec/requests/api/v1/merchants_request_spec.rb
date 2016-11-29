@@ -25,4 +25,5 @@ describe "merchants endpoints" do
       expect(merchant["id"]).to eq(id)
     end
   end
+
 end
