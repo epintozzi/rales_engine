@@ -29,7 +29,7 @@ Rails.application.routes.draw do
       resources :items, only: [:index, :show] do
         scope module: "items" do
           resources :invoice_items, only: [:index]
-          resources :merchants, only: [:index]
+          get '/merchant' => 'merchants#index',   as: "merchant"
         end
       end
 
@@ -42,7 +42,7 @@ Rails.application.routes.draw do
 
       resources :transactions, only: [:index, :show] do
         scope module: "transactions" do
-          resources :invoices, only: [:index]
+          get '/invoice' => 'invoices#index',   as: "invoice"
         end
       end
     end
