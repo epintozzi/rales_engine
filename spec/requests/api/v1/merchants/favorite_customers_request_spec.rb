@@ -22,11 +22,10 @@ describe "merchant/favorite_customer result" do
 
         get "/api/v1/merchants/#{merchant_1.id}/favorite_customer"
 
-
         customer = JSON.parse(response.body)
 
         expect(response).to be_success
-        expect(customer.id).to eq(customer_2.id)
+        expect(customer["id"]).to eq(customer_2.id)
     end
   end
 end
