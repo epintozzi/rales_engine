@@ -6,6 +6,7 @@ Rails.application.routes.draw do
         scope module: "merchants" do
           resources :items, only: [:index]
           resources :invoices, only: [:index]
+          get '/favorite_customer' => 'favorite_customers#index', as: "favorite_customer"
         end
       end
 
