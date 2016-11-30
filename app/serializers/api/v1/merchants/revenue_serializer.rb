@@ -2,8 +2,6 @@ class Api::V1::Merchants::RevenueSerializer < ActiveModel::Serializer
   attributes :revenue
 
   def revenue
-    binding.pry
-    # {"revenue" => "#{object}"}
-    "#{object}"
+    (object/100.00).to_s
   end
 end
