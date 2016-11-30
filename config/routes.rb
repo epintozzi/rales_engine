@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
 
+
   namespace :api do
     namespace :v1 do
       resources :merchants, only: [:index, :show] do
         scope module: "merchants" do
           resources :items, only: [:index]
           resources :invoices, only: [:index]
+          get '/favorite_customer' => 'favorite_customers#index', as: "favorite_customer"
+          get '/revenue' => 'revenues#index', as: "revenue"
         end
       end
 
