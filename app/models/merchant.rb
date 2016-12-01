@@ -6,20 +6,8 @@ class Merchant < ApplicationRecord
   has_many :invoice_items, through: :invoices
 
 
-  def top_merchants_by_revenue(quantity)
-    joins(invoices: [:invoice_items, :transactions]).merge(Transaction.successful).group(:id).order("sum(invoice_items.quantity * invoice_items.unit_price) DESC").limit(quantity)
-  end
-
-#total revenue across all merchants on date; in progress
-  def total_revenue_on_date(date)
-    merchants.joins(invoices: [:invoice_items, :transactions]).where(created_at: "2012-03-16 11:55:05").merge(Transaction.successful).sum("invoice_items.quantity * invoice_items.unit_price")
-
-  end
-
   def favorite_customer
-    favorite = customers.joins(:transactions).merge(Transaction.successful).group(:id).count.max_by do |k, v|
-      v
-    end
+    favorite = customers.joins(:transactions).merge(Transaction.successful).group(:id).order("count(transactions.id) DESC")
 
     customer_id = favorite.first
 
@@ -37,19 +25,16 @@ class Merchant < ApplicationRecord
     .sum("invoice_items.quantity * invoice_items.unit_price")
   end
 
-#use for all merchant's revenue on date
-merchants.joins(invoices: [:invoice_items, :transactions]).merge(Transaction.successful)
+  def top_merchants_by_revenue(number)
+    joins(invoices: [:invoice_items, :transactions]).merge(Transaction.successful).group(:id).order("sum(invoice_items.quantity * invoice_items.unit_price) DESC").limit(number)
+  end
 
-#top x merchants by revenue
-merchants.joins(invoices: [:invoice_items, :transactions]).merge(Transaction.successful).group(:id).order("sum(invoice_items.quantity * invoice_items.unit_price) DESC")
+  def total_revenue_on_date(date)
+    joins(invoices: [:invoice_items, :transactions]).where(invoices: {created_at: "#{date}"}).merge(Transaction.successful).sum("invoice_items.quantity * invoice_items.unit_price")
+  end
 
-  # def revenue_by_date(date = nil)
-  #   iv = invoices
-  #
-  #   iv = ivoices.where(created_at: "#{date}") unless date.nil?
-  #
-  #   iv.joins(:transactions, :invoice_items)
-  #   .merge(Transaction.successful)
-  #   .sum("invoice_items.quantity * invoice_items.unit_price")
-  # end
+  def top_merchants_by_items_sold(number)
+    joins(invoices: [:invoice_items, :transactions]).merge(Transaction.successful).group(:id).order("sum(invoice_items.unit_price) DESC").limit(number)
+  end
+
 end
