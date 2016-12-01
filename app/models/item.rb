@@ -6,4 +6,9 @@ class Item < ApplicationRecord
   def best_day
     best = invoices.joins(:transactions, :invoice_items).merge(Transaction.successful).group(:created_at).order("sum(invoice_items.quantity) desc").pluck(:created_at).first
   end
+
+  def top_items_by_quantity_sold(number)
+    joins(invoices: [:transactions, :invoice_items]).merge(Transaction.successful)
+  end
+
 end
