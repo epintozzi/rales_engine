@@ -25,6 +25,9 @@ Rails.application.routes.draw do
       get '/customers/find_all' => 'customer_search#index', as: "customers/find_all"
       get '/customers/find' => 'customer_search#show', as: "customers/find"
 
+      get '/invoices/find_all' => 'invoice_search#index', as: "invoices/find_all"
+      get '/invoices/find' => 'invoice_search#show', as: "invoices/find"
+
       resources :merchants, only: [:index, :show] do
         scope module: "merchants" do
           resources :items, only: [:index]
