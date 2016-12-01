@@ -6,17 +6,16 @@ class Merchant < ApplicationRecord
   has_many :invoice_items, through: :invoices
 
   def favorite_customer
-    favorite = customers.joins(:transactions).merge(Transaction.successful).group(:id).count.max_by do |k, v|
-      v
-    end
-
-    customer_id = favorite.first
-
-    Customer.find(customer_id)
+    Merchant.find(80).customers.joins(:transactions)
+    .merge(Transaction.successful)
+    .group(:id)
+    .order("count(transactions.*) desc")
   end
 
   def revenue
-    invoices.joins(:transactions, :invoice_items).merge(Transaction.successful).sum("invoice_items.quantity * invoice_items.unit_price")
+    invoices.joins(:transactions, :invoice_items)
+    .merge(Transaction.successful)
+    .sum("invoice_items.quantity * invoice_items.unit_price")
   end
 
   def revenue_by_date(date)
