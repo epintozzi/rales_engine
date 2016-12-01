@@ -9,6 +9,7 @@ Rails.application.routes.draw do
           resources :invoices, only: [:index]
           get '/favorite_customer' => 'favorite_customers#index', as: "favorite_customer"
           get '/revenue' => 'revenues#index', as: "revenue"
+          
         end
       end
 
