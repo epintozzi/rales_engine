@@ -28,6 +28,15 @@ Rails.application.routes.draw do
       get '/invoices/find_all' => 'invoice_search#index', as: "invoices/find_all"
       get '/invoices/find' => 'invoice_search#show', as: "invoices/find"
 
+      get '/transactions/find_all' => 'transaction_search#index', as: "transactions/find_all"
+      get '/transactions/find' => 'transaction_search#show', as: "transactions/find"
+
+      get '/items/find_all' => 'item_search#index', as: "items/find_all"
+      get '/items/find' => 'item_search#show', as: "items/find"
+
+      get '/invoice_items/find_all' => 'invoice_item_search#index', as: "invoice_items/find_all"
+      get '/invoice_items/find' => 'invoice_item_search#show', as: "invoice_items/find"
+
       resources :merchants, only: [:index, :show] do
         scope module: "merchants" do
           resources :items, only: [:index]
