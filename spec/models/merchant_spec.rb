@@ -2,6 +2,37 @@ require 'rails_helper'
 
 RSpec.describe Merchant, type: :model do
 
+  describe "relationships" do
+
+    it "has many transactions through invoices" do
+      merchant = create(:merchant)
+      expect(merchant).to respond_to(:transactions)
+      expect(merchant).to respond_to(:invoices)
+    end
+
+    it "has many customers through invoices" do
+      merchant = create(:merchant)
+      expect(merchant).to respond_to(:customers)
+      expect(merchant).to respond_to(:invoices)
+    end
+
+    it "has many invoice_items through invoices" do
+      merchant = create(:merchant)
+      expect(merchant).to respond_to(:invoice_items)
+      expect(merchant).to respond_to(:invoices)
+    end
+
+    it "has many invoices" do
+        merchant = create(:merchant)
+        expect(merchant).to respond_to(:invoices)
+    end
+
+    it "has many items" do
+        merchant = create(:merchant)
+        expect(merchant).to respond_to(:items)
+    end
+  end
+
   context "returns a merchant's favorite customer" do
     it "picks customer with most successful transactions" do
       merchant_1, merchant_2 = create_list(:merchant, 2)

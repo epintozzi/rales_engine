@@ -15,8 +15,6 @@ describe "transactions endpoints" do
   end
   context "GET /transactions/:id" do
     it "can get one transaction by its id" do
-      # transactions = create_list(:transaction, 3)
-      # id = transactions.first.id
       id = create(:transaction).id
 
       get "/api/v1/transactions/#{id}"

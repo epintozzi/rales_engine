@@ -4,4 +4,8 @@ class Invoice < ApplicationRecord
   has_many :transactions
   has_many :invoice_items
   has_many :items, through: :invoice_items
+
+  scope :successful, -> { includes(:transactions).where(transactions: {result: "success"}) }
+  scope :pending, -> { where.not(id: Transaction.where(result: "success").pluck('DISTINCT invoice_id') ) }
+
 end

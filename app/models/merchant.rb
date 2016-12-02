@@ -5,7 +5,6 @@ class Merchant < ApplicationRecord
   has_many :customers, through: :invoices
   has_many :invoice_items, through: :invoices
 
-
   def favorite_customer
     favorite = customers.joins(:transactions).merge(Transaction.successful).group(:id).order("count(transactions.id) DESC")
 
@@ -35,6 +34,10 @@ class Merchant < ApplicationRecord
 
   def self.top_merchants_by_items_sold(number)
     joins(invoices: [:invoice_items, :transactions]).merge(Transaction.successful).group(:id).order("sum(invoice_items.quantity) DESC").limit(number)
+  end
+
+  def customers_with_pending_invoices
+    customers.where(id: invoices.pending.pluck('DISTINCT customer_id')).uniq
   end
 
 end

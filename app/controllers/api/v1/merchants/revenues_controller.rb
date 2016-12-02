@@ -16,4 +16,5 @@ class Api::V1::Merchants::RevenuesController < ApplicationController
   def date
     params[:date]
   end
+  
 end
