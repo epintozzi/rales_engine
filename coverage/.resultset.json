@@ -1,6 +1,30 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/customer_search_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/application_controller.rb": [
+        1,
+        null
+      ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/customers_controller.rb": [
         1,
         1,
@@ -14,8 +38,35 @@
         null,
         null
       ],
-      "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/application_controller.rb": [
+      "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/invoice_item_search_controller.rb": [
         1,
+        null,
+        1,
+        1,
+        0,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/invoice_items_controller.rb": [
@@ -26,6 +77,26 @@
         null,
         1,
         1,
+        null,
+        null
+      ],
+      "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/invoice_search_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
         null,
         null
       ],
@@ -40,6 +111,37 @@
         null,
         null
       ],
+      "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/item_search_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        0,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/items_controller.rb": [
         1,
         1,
@@ -51,11 +153,90 @@
         null,
         null
       ],
+      "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/items_most_items_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/items_most_revenues_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/merchant_search_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/merchants_controller.rb": [
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/merchants_items_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/merchants_most_revenues_controller.rb": [
         1,
         null,
         1,
         1,
+        null,
+        null
+      ],
+      "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/transaction_search_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
         null,
         null
       ],
@@ -118,11 +299,11 @@
         null,
         null,
         1,
-        0,
+        1,
         null,
         null,
         1,
-        0,
+        1,
         null,
         null,
         null
@@ -164,7 +345,7 @@
         null,
         null,
         1,
-        0,
+        1,
         null,
         null,
         null
@@ -173,7 +354,7 @@
         1,
         1,
         null,
-        7,
+        10,
         null,
         null,
         null,
@@ -199,6 +380,7 @@
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/customers/transactions_controller.rb": [
         1,
+        null,
         1,
         1,
         null,
@@ -402,18 +584,6 @@
         null,
         null
       ],
-      "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/merchants_controller.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/transactions/invoices_controller.rb": [
         1,
         null,
@@ -433,6 +603,6 @@
         null
       ]
     },
-    "timestamp": 1480655116
+    "timestamp": 1480658205
   }
 }
