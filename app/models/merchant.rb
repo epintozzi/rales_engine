@@ -36,4 +36,8 @@ class Merchant < ApplicationRecord
     joins(invoices: [:invoice_items, :transactions]).merge(Transaction.successful).group(:id).order("sum(invoice_items.quantity) DESC").limit(number)
   end
 
+  def customers_with_pending_invoices
+    customers.where(id: invoices.pending.pluck('DISTINCT customer_id')).uniq
+  end
+
 end

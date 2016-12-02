@@ -292,6 +292,10 @@
         1,
         1,
         1,
+        null,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/models/item.rb": [
@@ -351,6 +355,10 @@
         null,
         1,
         1,
+        null,
+        null,
+        1,
+        0,
         null,
         null,
         null
@@ -648,6 +656,6 @@
         null
       ]
     },
-    "timestamp": 1480658955
+    "timestamp": 1480662335
   }
 }
