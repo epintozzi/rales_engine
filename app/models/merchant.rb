@@ -38,6 +38,7 @@ class Merchant < ApplicationRecord
 
   def customers_with_pending_invoices
     customers.where(id: invoices.pending.pluck('DISTINCT customer_id')).uniq
+    # ActiveRecord::Base.connection.execute("SELECT * FROM customers WHERE customers.id IN (SELECT customer_id  FROM invoices WHERE invoices.merchant_id = #{merchant_id.to_i} AND NOT EXISTS (SELECT * FROM transactions WHERE transactions.invoice_id = invoices.id AND transactions.result = 'success'))")
   end
 
 end
