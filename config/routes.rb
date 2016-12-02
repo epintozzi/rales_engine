@@ -19,6 +19,7 @@ Rails.application.routes.draw do
 
       get '/items/find_all' => 'item_search#index', as: "items/find_all"
       get '/items/find' => 'item_search#show', as: "items/find"
+      get '/items/most_items' => 'items_most_items#show', as: "items/most_items"
 
       get '/invoice_items/find_all' => 'invoice_item_search#index', as: "invoice_items/find_all"
       get '/invoice_items/find' => 'invoice_item_search#show', as: "invoice_items/find"
