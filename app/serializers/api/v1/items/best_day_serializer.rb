@@ -1,7 +1,7 @@
 class Api::V1::Items::BestDaySerializer < ActiveModel::Serializer
-  attributes :date
+  attributes :best_day
 
-  def date
+  def best_day
     object
   end
 end

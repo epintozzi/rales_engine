@@ -9,7 +9,11 @@ class Api::V1::ItemSearchController < ApplicationController
   end
 
   def show
-    render json: Item.find_by(item_params)
+    if params[:unit_price]
+      render json: Item.find_by(unit_price: unit_price)
+    else
+      render json: Item.find_by(item_params)
+    end
   end
 
   private
@@ -19,7 +23,7 @@ class Api::V1::ItemSearchController < ApplicationController
   end
 
   def unit_price
-    (params[:unit_price].to_f*100).to_i.to_s
+    (params[:unit_price].to_d * 100).to_i
   end
 
 end
