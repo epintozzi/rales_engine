@@ -49,7 +49,7 @@ RSpec.describe Merchant, type: :model do
       invoice_item_3 = create(:invoice_item, unit_price: 2, quantity: 3, invoice_id: invoice_3.id)
       invoice_item_4 = create(:invoice_item, unit_price: 2, quantity: 2, invoice_id: invoice_4.id)
 
-      expect(merchant_1.revenue).to eq(12)
+      expect(merchant_1.revenue).to eq(18)
     end
   end
 end

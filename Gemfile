@@ -27,6 +27,7 @@ group :development, :test do
   gem 'pry'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'simplecov'
 
 end
 
