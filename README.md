@@ -14,10 +14,10 @@ To run this project:
 
 ```
 git clone git@github.com:epintozzi/rales_engine.git
+cd rales_engine
 bundle install
 rake db:create db:migrate
 rake populate_database:populate_all
-
 ```
 Populating the database may take a few minutes, so please be patient.
 

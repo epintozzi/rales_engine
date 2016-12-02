@@ -4,26 +4,32 @@ Rails.application.routes.draw do
     namespace :v1 do
       get '/merchants/find_all' => 'merchant_search#index', as: "merchants/find_all"
       get '/merchants/find' => 'merchant_search#show', as: "merchants/find"
+      get '/merchants/random' => 'merchant_random#show', as: "merchants/random"
       get '/merchants/most_items' => 'merchants_items#show', as: "merchants/most_items"
       get '/merchants/revenue' => 'merchants_revenues#index', as: "merchants/revenue"
       get '/merchants/most_revenue' => 'merchants_most_revenues#index', as: "merchants/most_revenue"
 
       get '/customers/find_all' => 'customer_search#index', as: "customers/find_all"
       get '/customers/find' => 'customer_search#show', as: "customers/find"
+      get '/customers/random' => 'customer_random#show', as: "customers/random"
 
       get '/invoices/find_all' => 'invoice_search#index', as: "invoices/find_all"
       get '/invoices/find' => 'invoice_search#show', as: "invoices/find"
+      get '/invoices/random' => 'invoice_random#show', as: "invoices/random"
 
       get '/transactions/find_all' => 'transaction_search#index', as: "transactions/find_all"
       get '/transactions/find' => 'transaction_search#show', as: "transactions/find"
+      get '/transactions/random' => 'transaction_random#show', as: "transactions/random"
 
       get '/items/find_all' => 'item_search#index', as: "items/find_all"
       get '/items/find' => 'item_search#show', as: "items/find"
+      get '/items/random' => 'item_random#show', as: "items/random"
       get '/items/most_items' => 'items_most_items#show', as: "items/most_items"
       get '/items/most_revenue' => 'items_most_revenues#show', as: "items/most_revenue"
 
       get '/invoice_items/find_all' => 'invoice_item_search#index', as: "invoice_items/find_all"
       get '/invoice_items/find' => 'invoice_item_search#show', as: "invoice_items/find"
+      get '/invoice_items/random' => 'invoice_item_random#show', as: "invoice_items/random"
 
       resources :merchants, only: [:index, :show] do
         scope module: "merchants" do
