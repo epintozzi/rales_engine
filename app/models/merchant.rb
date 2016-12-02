@@ -5,7 +5,6 @@ class Merchant < ApplicationRecord
   has_many :customers, through: :invoices
   has_many :invoice_items, through: :invoices
 
-
   def favorite_customer
     favorite = customers.joins(:transactions).merge(Transaction.successful).group(:id).order("count(transactions.id) DESC")
 

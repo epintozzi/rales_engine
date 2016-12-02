@@ -27,13 +27,13 @@
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/customers_controller.rb": [
         1,
+        null,
         1,
         2,
         null,
         null,
         1,
         1,
-        null,
         null,
         null,
         null
@@ -71,12 +71,14 @@
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/invoice_items_controller.rb": [
         1,
+        null,
         1,
         1,
         null,
         null,
         1,
         1,
+        null,
         null,
         null
       ],
@@ -97,17 +99,18 @@
         2,
         null,
         null,
-        null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/invoices_controller.rb": [
         1,
+        null,
         1,
         2,
         null,
         null,
         1,
         1,
+        null,
         null,
         null
       ],
@@ -144,12 +147,14 @@
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/items_controller.rb": [
         1,
+        null,
         1,
         2,
         null,
         null,
         1,
         1,
+        null,
         null,
         null
       ],
@@ -188,7 +193,6 @@
         2,
         null,
         null,
-        null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/merchants_controller.rb": [
@@ -200,6 +204,7 @@
         null,
         1,
         1,
+        null,
         null,
         null
       ],
@@ -218,6 +223,7 @@
         1,
         1,
         null,
+        null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/transaction_search_controller.rb": [
@@ -235,7 +241,6 @@
         null,
         1,
         2,
-        null,
         null,
         null,
         null
@@ -264,6 +269,7 @@
         0,
         null,
         0,
+        null,
         null,
         null
       ],
@@ -316,7 +322,6 @@
         1,
         1,
         null,
-        null,
         1,
         2,
         null,
@@ -356,26 +361,27 @@
         null,
         10,
         null,
-        null,
-        null,
-        null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/customers/invoices_controller.rb": [
         1,
+        null,
         1,
         1,
+        null,
         null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/serializers/api/v1/customers/invoice_serializer.rb": [
         1,
         1,
+        null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/serializers/invoice_serializer.rb": [
         1,
         1,
+        null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/customers/transactions_controller.rb": [
@@ -384,36 +390,42 @@
         1,
         1,
         null,
+        null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/serializers/api/v1/customers/transaction_serializer.rb": [
         1,
         1,
+        null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/serializers/api/v1/customer_serializer.rb": [
         1,
         1,
+        null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/invoice_items/invoices_controller.rb": [
         1,
+        null,
         1,
         1,
+        null,
         null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/invoice_items/items_controller.rb": [
         1,
+        null,
         1,
         1,
+        null,
         null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/serializers/api/v1/invoice_items/item_serializer.rb": [
         1,
         1,
-        null,
         null,
         null
       ],
@@ -424,72 +436,90 @@
         1,
         4,
         null,
+        null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/invoices/customers_controller.rb": [
         1,
+        null,
         1,
         1,
+        null,
         null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/serializers/api/v1/invoices/customer_serializer.rb": [
         1,
         1,
+        null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/invoices/invoice_items_controller.rb": [
         1,
+        null,
         1,
         1,
+        null,
         null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/serializers/api/v1/invoices/invoice_item_serializer.rb": [
         1,
         1,
+        null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/invoices/items_controller.rb": [
         1,
+        null,
         1,
         1,
+        null,
         null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/serializers/api/v1/invoices/item_serializer.rb": [
         1,
         1,
+        null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/invoices/merchants_controller.rb": [
         1,
+        null,
         1,
         1,
+        null,
         null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/serializers/merchant_serializer.rb": [
         1,
         1,
+        null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/invoices/transactions_controller.rb": [
         1,
+        null,
         1,
         1,
+        null,
         null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/serializers/api/v1/invoices/transaction_serializer.rb": [
         1,
         1,
+        null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/items/invoice_items_controller.rb": [
         1,
+        null,
         1,
         1,
+        null,
         null,
         null
       ],
@@ -501,14 +531,17 @@
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/items/merchants_controller.rb": [
         1,
+        null,
         1,
         1,
+        null,
         null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/serializers/api/v1/items/merchant_serializer.rb": [
         1,
         1,
+        null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/serializers/api/v1/item_serializer.rb": [
@@ -517,6 +550,7 @@
         null,
         1,
         4,
+        null,
         null,
         null
       ],
@@ -527,24 +561,30 @@
         1,
         1,
         null,
+        null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/merchants/invoices_controller.rb": [
         1,
+        null,
         1,
         1,
+        null,
         null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/serializers/api/v1/merchants/invoice_serializer.rb": [
         1,
         1,
+        null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/merchants/items_controller.rb": [
         1,
+        null,
         1,
         1,
+        null,
         null,
         null
       ],
@@ -573,6 +613,7 @@
         1,
         1,
         null,
+        null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/serializers/api/v1/merchants/revenue_serializer.rb": [
@@ -582,6 +623,7 @@
         1,
         2,
         null,
+        null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/controllers/api/v1/transactions/invoices_controller.rb": [
@@ -590,19 +632,22 @@
         1,
         1,
         null,
+        null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/serializers/api/v1/transactions/invoice_serializer.rb": [
         1,
         1,
+        null,
         null
       ],
       "/Users/ebarth26/turing/3module/projects/rales_engine/app/serializers/api/v1/transaction_serializer.rb": [
         1,
         1,
+        null,
         null
       ]
     },
-    "timestamp": 1480658205
+    "timestamp": 1480658955
   }
 }

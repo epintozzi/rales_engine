@@ -10,4 +10,5 @@ class Customer < ApplicationRecord
 
     Merchant.find(merchant_id)
   end
+  
 end
