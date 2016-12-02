@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
 
-
-
   namespace :api do
     namespace :v1 do
       get '/merchants/find_all' => 'merchant_search#index', as: "merchants/find_all"
       get '/merchants/find' => 'merchant_search#show', as: "merchants/find"
+      get '/merchants/most_items' => 'merchants_items#show', as: "merchants/most_items"
+      get '/merchants/revenue' => 'merchants_revenues#index', as: "merchants/revenue"
+      get '/merchants/most_revenue' => 'merchants_most_revenues#index', as: "merchants/most_revenue"
 
       get '/customers/find_all' => 'customer_search#index', as: "customers/find_all"
       get '/customers/find' => 'customer_search#show', as: "customers/find"
@@ -35,6 +36,7 @@ Rails.application.routes.draw do
         scope module: "customers" do
           resources :invoices, only: [:index]
           resources :transactions, only: [:index]
+          get '/favorite_merchant' => 'favorite_merchants#index', as: "favorite_merchant"
         end
       end
 

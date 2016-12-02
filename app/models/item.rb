@@ -11,4 +11,8 @@ class Item < ApplicationRecord
     joins(invoices: [:transactions, :invoice_items]).merge(Transaction.successful)
   end
 
+  def top_items_by_revenue(number)
+    joins(invoices: [:transactions, :invoice_items]).merge(Transaction.successful).group(:id).order("sum(invoice_items.quantity * invoice_items.unit_price) DESC").limit(number)
+  end
+
 end
